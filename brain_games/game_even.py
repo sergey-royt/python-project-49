@@ -1,5 +1,5 @@
 import random
-import prompt
+from brain_games import games_logic
 
 
 def is_even(number_to_check):
@@ -12,12 +12,8 @@ def game(user_name):
     try_number = 1
     while try_number <= 3:
         number = random.randint(0, 100)
-        user_answer = prompt.string(f'Question: {number}\nYour answer: ')
-        if user_answer == is_even(number):
-            print('Correct!')
+        if games_logic.main(is_even(number), number, user_name):
             try_number += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{is_even(number)}'.\nLet's try again, {user_name}!")
             return None
     print(f'Congratulations, {user_name}!')
-           
