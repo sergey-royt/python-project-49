@@ -2,7 +2,7 @@
 
 
 from brain_games import greetings
-from brain_games import game_calc
+from brain_games.games import game_calc
 
 
 def main():
