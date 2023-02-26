@@ -8,3 +8,5 @@ Brain-even installation and playing example: https://asciinema.org/a/Bx9nh87ckGK
 Brain-calc playing examples: https://asciinema.org/a/a5jNGmB4OeXp4DUrx0IY13ZHq
 
 Brain-gcd playing examples: https://asciinema.org/a/GyCADDNF2vpHCbxrX52tmvvmn
+
+Brain-progression playing examples: https://asciinema.org/a/jNrPThPjw3R4sp4kMKxXW0qIu
