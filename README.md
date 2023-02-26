@@ -6,3 +6,5 @@
 Brain-even installation and playing example: https://asciinema.org/a/Bx9nh87ckGKPKa9iGKB2PJHeM
 
 Brain-calc playing examples: https://asciinema.org/a/a5jNGmB4OeXp4DUrx0IY13ZHq
+
+Brain-gcd playing examples: https://asciinema.org/a/GyCADDNF2vpHCbxrX52tmvvmn

@@ -2,13 +2,13 @@
 
 
 from brain_games import greetings
-from brain_games.games import game_calc
+from brain_games.games import game_gcd
 
 
 def main():
     name = greetings.welcome_user()
-    print('What is the result of the expression?')
-    game_calc.main(name)
+    print('Find the greatest common divisor of given numbers.')
+    game_gcd.main(name)
 
 
 if __name__ == '__main__':
