@@ -10,7 +10,8 @@ def main(player_name):
         y = random.randint(0, 100)
         op = operators[random.randint(0, 2)]
         question = f'{x} {op} {y}'
-        if games_logic.main(str(eval(question)), question, player_name):
+        answer = str(eval(question))
+        if games_logic.main(answer, question, player_name):
             try_number += 1
         else:
             return None    
