@@ -10,3 +10,5 @@ Brain-calc playing examples: https://asciinema.org/a/a5jNGmB4OeXp4DUrx0IY13ZHq
 Brain-gcd playing examples: https://asciinema.org/a/GyCADDNF2vpHCbxrX52tmvvmn
 
 Brain-progression playing examples: https://asciinema.org/a/jNrPThPjw3R4sp4kMKxXW0qIu
+
+Brain-prime playing examples: https://asciinema.org/a/d5cgLWqs0AlYbNbOrNnemvuxn
