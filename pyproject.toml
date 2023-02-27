@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Five short arithmetic games: brain-even, brain-calc, brain-gcd, vrain-progression, brain-prime"
 authors = ["Sergey R <topgoods687@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"},]
+repository = "https://github.com/sergey-royt/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.10"

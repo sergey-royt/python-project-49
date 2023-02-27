@@ -6,7 +6,7 @@ def main(player_name):
     operators = ['+', '-', '*']
     try_number = 1
     while try_number <= 3:
-        x = random.randint(0,100)
+        x = random.randint(0, 100)
         y = random.randint(0, 100)
         op = operators[random.randint(0, 2)]
         question = f'{x} {op} {y}'
@@ -14,6 +14,5 @@ def main(player_name):
         if games_logic.main(answer, question, player_name):
             try_number += 1
         else:
-            return None    
+            return None
     print(f'Congratulations, {player_name}!')
-       

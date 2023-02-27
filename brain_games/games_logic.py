@@ -7,5 +7,6 @@ def main(answer, question, player_name):
         print('Correct!')
         return True
     else:
-        print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {player_name}!")
+        print(f"""'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.
+Let's try again, {player_name}!""")
         return False
