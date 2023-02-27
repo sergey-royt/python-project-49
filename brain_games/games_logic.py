@@ -1,12 +1,12 @@
 import prompt
 
 
-def main(answer, question, player_name):
-    user_answer = prompt.string(f'Question: {question}\nYour answer: ')
-    if user_answer == answer:
+def main(result, question, player_name):
+    answer = prompt.string(f'Question: {question}\nYour answer: ')
+    if result == answer:
         print('Correct!')
         return True
     else:
-        print(f"""'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.
+        print(f"""'{answer}' is wrong answer ;(. Correct answer was '{result}'.
 Let's try again, {player_name}!""")
         return False
