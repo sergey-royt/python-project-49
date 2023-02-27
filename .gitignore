@@ -1,6 +1,6 @@
 .venv/
 dist/
-__pycache__
+brain_games/__pycache__
 setuo.cfg
 brain_games/cli.py
 venv/
