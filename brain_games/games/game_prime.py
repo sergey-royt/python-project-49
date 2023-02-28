@@ -1,5 +1,8 @@
 from random import randint
-from brain_games import games_logic
+
+
+def rules():
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -12,14 +15,7 @@ def is_prime(number):
         return 'yes'
 
 
-def main(player_name):
-    try_number = 1
-
-    while try_number <= 3:
-        number = randint(1, 100)
-        answer = is_prime(number)
-        if games_logic.main(answer, number, player_name):
-            try_number += 1
-        else:
-            return None
-    print(f'Congratulations, {player_name}!')
+def main():
+    number = randint(1, 100)
+    result = is_prime(number)
+    return (number, result)
