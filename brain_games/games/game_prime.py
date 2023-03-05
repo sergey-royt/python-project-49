@@ -7,15 +7,22 @@ def rules():
 
 def is_prime(number):
     if number == 1:
-        return 'yes'
+        return True
     else:
         for i in range(2, number):
             if number % i == 0:
-                return 'no'
-        return 'yes'
+                return False
+        return True
 
 
-def main():
-    number = randint(1, 100)
-    result = is_prime(number)
+def game():
+    GAME_NUMBER_RANGE_BOTTOM = 1
+    GAME_NUMBER_RANGE_TOP = 100
+
+    number = randint(GAME_NUMBER_RANGE_BOTTOM, GAME_NUMBER_RANGE_TOP)
+
+    if is_prime(number):
+        result = 'yes'
+    else:
+        result = 'no'
     return (number, result)

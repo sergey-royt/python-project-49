@@ -7,11 +7,18 @@ def rules():
 
 def is_even(number_to_check):
     if not number_to_check % 2:
-        return 'yes'
-    return 'no'
+        return True
+    return False
 
 
-def main():
-    number = randint(0, 100)
-    result = is_even(number)
+def game():
+    GAME_NUMBER_RANGE_BOTTOM = 0
+    GAME_NUMBER_RANGE_TOP = 100
+
+    number = randint(GAME_NUMBER_RANGE_BOTTOM, GAME_NUMBER_RANGE_TOP)
+
+    if is_even(number):
+        result = 'yes'
+    else:
+        result = 'no'
     return (number, result)

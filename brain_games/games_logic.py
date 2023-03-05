@@ -1,22 +1,25 @@
 import prompt
-from brain_games import greetings
 
 
-def main(game):
-    player_name = greetings.welcome_user()
+def engine(game):
+    username = prompt.string('Welcome to the Brain Games! \
+\nMay I have your name? ')
+    print(f'Hello, {username}!')
     print(game.rules())
 
-    try_number = 1
+    QUESTION_POSITION = 0
+    ANSWER_POSITION = 1
+    NUMBER_OF_ROUNDS = 3
 
-    while try_number <= 3:
-        result = game.main()
-        answer = prompt.string(f'Question: {result[0]}\nYour answer: ')
-        if answer == result[1]:
+    for _ in range(NUMBER_OF_ROUNDS):
+        result = game.game()
+        answer = prompt.string(f'Question: {result[QUESTION_POSITION]} \
+\nYour answer: ')
+        if answer == result[ANSWER_POSITION]:
             print('Correct!')
-            try_number += 1
         else:
             print(f"""'{answer}' is wrong answer ;(. \
-Correct answer was '{result[1]}'.
-Let's try again, {player_name}!""")
+Correct answer was '{result[ANSWER_POSITION]}'.
+Let's try again, {username}!""")
             return None
-    print(f'Congratulations, {player_name}!')
+    print(f'Congratulations, {username}!')
