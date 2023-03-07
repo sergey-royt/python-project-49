@@ -13,7 +13,7 @@ def get_rules():
 
 
 def get_progression(initial_item, common_difference):
-    progression = [initial_item,]
+    progression = [initial_item, ]
     for element in range(0, PROGRESSION_LENGTH):
         progression.append(progression[element] + common_difference)
     return progression
