@@ -12,6 +12,7 @@ def get_rules():
 def is_even(number_to_check):
     return not number_to_check % 2
 
+
 def get_result():
     number = randint(GAME_NUMBER_RANGE_BOTTOM, GAME_NUMBER_RANGE_TOP)
 

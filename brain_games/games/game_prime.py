@@ -1,7 +1,6 @@
 from random import randint
 
 
-
 GAME_NUMBER_RANGE_BOTTOM = 1
 GAME_NUMBER_RANGE_TOP = 100
 
