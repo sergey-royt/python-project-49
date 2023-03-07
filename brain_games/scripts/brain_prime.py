@@ -6,7 +6,7 @@ from brain_games.games import game_prime
 
 
 def main():
-    games_logic.engine(game_prime)
+    games_logic.play_game(game_prime)
 
 
 if __name__ == '__main__':

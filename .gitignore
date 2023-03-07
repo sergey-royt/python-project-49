@@ -3,3 +3,4 @@ dist/
 **/__pycache__
 setup.cfg
 venv/
+.idea/
